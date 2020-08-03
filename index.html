@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="dosomething.js"></script>
+    <title>Good morning!</title>
+</head>
+
+<body>
+    <div class="container pt-4">
+        <div class="mx-auto">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Welcome! This is a message board.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="container">
+                                <form onsubmit="event.preventDefault();submitForm();">
+                                  <div class="form-group">
+                                    <label>Name:</label>
+                                    <input type="text" class="form-control" placeholder="Your name" name="name" id="name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Message:</label>
+                                    <input type="text" class="form-control" placeholder="Your message" name="message" id="message">
+                                  </div>
+                                  
+                                  <button type="submit" class="btn btn-success">Submit</button>
+                                </form>
+                              </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 顯示留言 -->
+    <div class="container pt-4">
+        <div class="mx-auto">
+            <table class="table table-striped table-dark" id="show">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Message</th>
+                        <th>Edit_Message</th>
+                        <th>Delete_Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
